@@ -5,13 +5,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Edit Page</title>
 </head>
 <body>
+	<h1>Edit a car item</h1>
 	<form action = "editItemServlet" method="post">
-		Make: <input type ="text" name = "store" value= "${itemToEdit.make}">
-		Model: <input type = "text" name = "item" value= "${itemToEdit.model}">
-		Year: <input type = "text" name = "item" value= "${itemToEdit.year}">
+		Make: <input type ="text" name = "make" value= "${itemToEdit.make}">
+		Model: <input type = "text" name = "model" value= "${itemToEdit.model}">
+		Year: <input type = "text" name = "year" value= "${itemToEdit.year}">
 		<input type = "hidden" name = "id" value="${itemToEdit.id}">
 		<input type = "submit" value="Save Edited Item">
 	</form>
